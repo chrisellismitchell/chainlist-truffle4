@@ -1,16 +1,16 @@
 pragma solidity ^0.4.18;
 
-contract Ownable{
-  //stat variables
+contract Ownable {
+  // state variables
   address owner;
 
-  //modifier
-  modifier onlyOwner(){
+  // modifiers
+  modifier onlyOwner() {
     require(msg.sender == owner);
     _;
   }
 
-  //constructor
+  // constructor
   function Ownable() public {
     owner = msg.sender;
   }
