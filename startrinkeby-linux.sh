@@ -1,0 +1,1 @@
+geth --rinkeby --rpc --rpcapi="peronal,eth,network,web3,net" --ipcpath "~/.ethereum/geth.ipc" --allow-insecure-unlock
